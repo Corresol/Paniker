@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Cameras"
+        android:layout_margin="@dimen/first_layout"
+        android:textColor="@color/color_milk"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:gravity="center_horizontal"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      android:layout_margin="@dimen/layout_sign_up"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/profile_margin"
+            android:layout_marginBottom="@dimen/profile_margin"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SCAN CAMERAS"
+            android:layout_margin="@dimen/layout_sign_up"
+            android:textColor="@color/color_milk"
+            android:id="@+id/Cameras"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/scanCameras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/first_layout"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/scanCameras"
+            android:src="@drawable/ic_sync_white_24dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/profile_margin"
+            android:background="@android:color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/first_layout"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Name"
+                android:textColor="@color/color_milk"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Auto Rec."
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/color_milk"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Current"
+                    android:gravity="center_horizontal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/color_milk"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|end"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/color_milk"
+                    android:text="Scan"/>
+        </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Raw Camera"
+                android:layout_margin="@dimen/layout_sign_up"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/color_milk"
+                android:id="@+id/rawCamera"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        app:buttonTint="@color/color_milk"
+                        android:textColor="@color/color_milk"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        app:buttonTint="@color/color_milk"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/dp5_margin"
+                        android:src="@drawable/ic_sync_white_24dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/profile_margin"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Front Camera"
+                android:layout_margin="@dimen/layout_sign_up"
+                android:textColor="@color/color_milk"
+                android:id="@+id/frontCamera"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/color_milk"
+                    app:buttonTint="@color/color_milk"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    app:buttonTint="@color/color_milk"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/dp5_margin"
+                    android:src="@drawable/ic_sync_white_24dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/profile_margin"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="External Camera"
+                android:layout_margin="@dimen/layout_sign_up"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/color_milk"
+                android:id="@+id/externalCamera1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/color_milk"
+                    app:buttonTint="@color/color_milk"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    app:buttonTint="@color/color_milk"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/dp5_margin"
+                    android:src="@drawable/ic_sync_white_24dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/profile_margin"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="External Camera2"
+                android:layout_margin="@dimen/layout_sign_up"
+                android:textColor="@color/color_milk"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:id="@+id/externalCamera2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/color_milk"
+                    app:buttonTint="@color/color_milk"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    app:buttonTint="@color/color_milk"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/dp5_margin"
+                    android:src="@drawable/ic_sync_white_24dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/first_layout"
+        android:background="@android:color/white"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_margin="@dimen/layout_sign_up"
+        android:textColor="@color/color_milk"
+        android:id="@+id/ok"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+</LinearLayout>

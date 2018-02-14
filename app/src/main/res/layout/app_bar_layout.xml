@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/appBar">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        app:titleTextColor="@color/color_milk"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/paniker"/>
+    </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/take_photo"
+    tools:context="com.yupi.home.panikerapp.fragments.TakePhotoFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:id="@+id/returnBack"
+            android:layout_marginLeft="@dimen/dp5_margin"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="?attr/actionBarSize">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/ic_sync_white_24dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/take_photo_action"
+            android:id="@+id/takePhoto"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/ic_flash_off_white_24dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">PanikerApp</string>
+    <string name="language">English (United States)</string>
+    <string name="email_adress">Email address</string>
+    <string name="password">Password</string>
+    <string name="phone_number">Phone number</string>
+    <string name="gender">Gender</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up with Email</string>
+    <string name="full_name">Full name</string>
+    <string name="finish">FINISH</string>
+    <string name="finish_msg">You are almost done. Please select the type of account you will like to create</string>
+    <string name="law_enfor">Law Enforcement</string>
+    <string name="lawyer">Lawyer</string>
+    <string name="citizen">Citizen</string>
+    <string name="select_language">Select your language</string>
+    <string name="search">Search</string>
+    <string name="alert_error">We discovered some error
+        when you tried to login. Please check your email or password</string>
+    <string name="error_name">Some Error Name</string>
+    <string name="report_problem">Report problem</string>
+    <string name="ok">OK</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+    <string name="lorem_ipsum_second_part">Pro equidem habemus minimum ut, hinc vocent mei at.
+        Eum voluptaria rationibus an, eum cu affert diceret mandamus, te quo iisque sapientem.</string>
+    <string name="comments">Your comment goes here...</string>
+    <string name="post">POST</string>
+    <string name="edit">Edit profile</string>
+    <string name="rate">4.0/5 from 27 votes</string>
+    <string name="location">New Castle, Delware, United States</string>
+    <string name="rewards">4 rewards</string>
+    <string name="record_an_audio">Tap and hold to record audio</string>
+    <string name="msg">Write a message...</string>
+    <string name="fingerprint">Put fingerprint on reader</string>
+    <string name="add_file">Add file</string>
+    <string name="recipient_source">Select Recipient Source</string>
+    <string name="watch_camera">Watch Camera</string>
+    <string name="bluetooth_camera">Bluetooth Camera</string>
+    <string name="store_data">Store data</string>
+    <string name="record">Record 24/7</string>
+    <string name="record_s_m">Record when sound or movement are detected</string>
+    <string name="paniker_button_pressed">Record when PANIKER button I press in Paniker Mobile App</string>
+    <string name="record_manually">Record when manually started in Paniker Manage Camera</string>
+    <string name="general_profile">GENERAL PROFILE</string>
+    <string name="videos_in_wait">VIDEOS IN WAIT</string>
+    <string name="camera_management">CAMERA MANAGEMENT</string>
+    <string name="security_settings">SECURITY SETTINGS</string>
+    <string name="blocked_users">BLOCKED USERS</string>
+    <string name="language_settings">LANGUAGE</string>
+    <string name="account_type">ACCOUNT TYPE</string>
+    <string name="settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

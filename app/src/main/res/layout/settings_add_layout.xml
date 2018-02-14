@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/color_milk"
+    android:clickable="true"
+    android:id="@id/root_frameLayout"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/color_milk"
+    android:clickable="true"
+    android:id="@id/frameLayout"
+    android:layout_height="match_parent">
+    <include layout="@layout/below_toolbar_layout"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/profile_margin">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/layout_sign_up"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/takePicture"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/take_picture_green"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TAKE A PICTURE"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/first_layout"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/phoneStorage"
+            android:layout_marginTop="@dimen/first_layout"
+            android:layout_below="@+id/takePicture"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/phone_storage"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PHONE STORAGE"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/first_layout"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/panikerStorage"
+        android:layout_marginTop="@dimen/first_layout"
+        android:layout_below="@+id/phoneStorage"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/paniker_storage"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PANIKER STORAGE"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/first_layout"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/fingerprint"
+            android:layout_marginTop="@dimen/first_layout"
+            android:layout_below="@+id/panikerStorage"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/fingerprint_green_small"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FINGERPRINT"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/first_layout"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/divider"
+            android:layout_below="@+id/fingerprint"
+            android:layout_marginTop="@dimen/first_layout"
+            android:background="@android:color/black"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_sign_up"
+            android:id="@+id/listView"
+            android:layout_below="@+id/divider"/>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+</FrameLayout>

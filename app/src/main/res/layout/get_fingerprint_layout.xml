@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:orientation="vertical">
+
+    <include layout="@layout/below_toolbar_layout"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/profile_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/first_layout">
+
+            <TextView
+                android:id="@+id/fingerprint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/fingerprint"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fingerprint"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/putFingerprint"
+                android:layout_margin="@dimen/first_layout"
+                android:src="@drawable/fingerprint_green" />
+            <TextView
+                android:id="@+id/processing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="@dimen/layout_sign_up"
+                android:text="Processing..."
+                android:layout_below="@+id/putFingerprint"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/processing"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/first_layout"
+                android:background="@drawable/msg_box"
+                android:id="@+id/fingerprintFinished"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/fingerprint_finished"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="@dimen/layout_sign_up"
+                android:text="DONE"
+                android:layout_below="@+id/fingerprintFinished"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

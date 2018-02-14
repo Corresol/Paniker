@@ -1,0 +1,69 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yupi.home.panikerapp.fragments.PairedDevicesFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pink"
+        android:orientation="vertical">
+
+        <include layout="@layout/below_toolbar_layout" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/profile_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/layout_sign_up">
+
+                <TextView
+                    android:id="@+id/camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DEVICE NAME"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/black"
+                    android:drawableRight="@drawable/settings_edit_pencil_icon"/>
+
+                <View
+                    android:id="@+id/camerasDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/camera"
+                    android:layout_marginTop="@dimen/layout_sign_up"
+                    android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/camerasDivider"
+            android:layout_margin="@dimen/first_layout"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/background_red"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="UNPAIR"
+                android:layout_marginRight="@dimen/first_layout"
+                android:textStyle="bold"
+                android:layout_toLeftOf="@+id/save"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="CONNECT"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:id="@+id/save" />
+        </RelativeLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</FrameLayout>

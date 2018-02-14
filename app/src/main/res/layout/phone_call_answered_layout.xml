@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/phone_call_backg"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize">
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/profile_call_image"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_sign_up"
+            android:textColor="@color/color_milk"
+            android:text="John Doe"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_milk"
+            android:text="10:55"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_above="@+id/endCalLayout"
+        android:layout_margin="@dimen/first_layout"
+        android:layout_marginBottom="?attr/actionBarSize">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/phone_call_speaker"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/phone_call_mute"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/phone_call_hide"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:id="@+id/endCalLayout"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/end_phone_call"
+            android:id="@+id/endPhoneCall"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>
